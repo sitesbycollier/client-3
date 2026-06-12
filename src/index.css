@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 220 60% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 60% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 60% 10%;
+
+    --primary: 224 80% 21%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 224 35% 92%;
+    --secondary-foreground: 224 60% 10%;
+
+    --muted: 224 20% 93%;
+    --muted-foreground: 224 25% 38%;
+
+    --accent: 348 100% 38%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 348 100% 38%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 224 25% 82%;
+    --input: 224 25% 82%;
+    --ring: 224 80% 21%;
+    --radius: 0.5rem;
+
+    --font-heading: "Oswald", sans-serif;
+    --font-body: "Source Sans 3", sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+}
